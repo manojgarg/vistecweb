@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="VistecPartners">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B5ED7"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="12" width="40" height="40" rx="9" fill="url(#g)"/>
+  <path fill="#fff" d="M13 20h5l4 12 4-12h5l-6 24h-6L13 20Zm21 0h3v24h-3V20Z"/>
+  <text x="56" y="42" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#0F172A">Vistec<tspan fill="#14B8A6">Partners</tspan></text>
+</svg>

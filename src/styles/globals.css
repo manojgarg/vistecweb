@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-hero: linear-gradient(135deg, #0a0f1e 0%, #1e293b 50%, #0f172a 100%);
+  --gradient-cta: linear-gradient(135deg, #0b5ed7, #2563eb);
+  --gradient-card-glow: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(11, 94, 215, 0.1));
+  --gradient-mesh: radial-gradient(at 27% 37%, rgba(20, 184, 166, 0.15) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, rgba(11, 94, 215, 0.12) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgba(245, 158, 11, 0.08) 0px, transparent 50%);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  @apply bg-navy-950 text-gray-100 antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgba(20, 184, 166, 0.3);
+  color: #f8fafc;
+}
+
+*:focus-visible {
+  @apply outline-none ring-2 ring-teal-400 ring-offset-2 ring-offset-navy-950 rounded-sm;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+  .bg-gradient-cta {
+    background-image: var(--gradient-cta);
+  }
+  .bg-gradient-card-glow {
+    background-image: var(--gradient-card-glow);
+  }
+  .bg-gradient-mesh {
+    background-image: var(--gradient-mesh);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .dot-grid {
+    background-image: radial-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .noise-texture::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    scrollbar-width: none;
+  }
+}
