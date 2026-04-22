@@ -31,7 +31,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 z-50 flex h-full w-[min(420px,100%)] flex-col bg-white shadow-2xl"
+            className="fixed top-0 right-0 bottom-0 z-50 flex w-full max-w-[420px] flex-col bg-white shadow-2xl overflow-hidden"
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation"
