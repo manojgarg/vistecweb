@@ -12,7 +12,7 @@ const parcs = ["Predict", "Prevent", "Optimize", "Collect (guaranteed)"];
 
 export function SolutionIntro() {
   return (
-    <SectionWrapper variant="gradient" className="bg-navy-950">
+    <SectionWrapper variant="gradient">
       <Container className="max-w-4xl text-center">
         <SectionEyebrow>The Solution</SectionEyebrow>
         <SectionHeading size="h1" tone="dark" className="mx-auto">
@@ -72,13 +72,13 @@ function FlowRow({
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`rounded-xl border p-6 md:p-8 ${
         accent
-          ? "border-teal-400/30 bg-gradient-to-br from-teal-500/10 via-blue-500/5 to-transparent"
-          : "border-white/10 bg-navy-900/60"
+          ? "border-blue-500/30 bg-gradient-to-br from-blue-500/10 via-blue-500/5 to-transparent"
+          : "border-gray-200 bg-gray-100"
       }`}
     >
       <div
         className={`inline-flex items-center gap-2 text-caption font-semibold uppercase tracking-widest ${
-          accent ? "text-teal-300" : "text-gray-500"
+          accent ? "text-blue-500" : "text-gray-500"
         }`}
       >
         {label}
@@ -89,13 +89,13 @@ function FlowRow({
             <div
               className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-body-sm font-medium ${
                 accent
-                  ? "border-teal-400/40 bg-teal-500/10 text-teal-200"
-                  : "border-white/10 bg-navy-800/80 text-gray-400 line-through decoration-error/50 decoration-2"
+                  ? "border-blue-500/40 bg-blue-500/10 text-blue-500"
+                  : "border-gray-200 bg-white text-gray-400 line-through decoration-error/50 decoration-2"
               }`}
             >
               <span
                 className={`grid h-5 w-5 place-items-center rounded-full ${
-                  accent ? "bg-teal-400/20 text-teal-300" : "bg-error/15 text-error"
+                  accent ? "bg-blue-500/20 text-blue-500" : "bg-error/15 text-error"
                 }`}
               >
                 {icon}
@@ -104,7 +104,7 @@ function FlowRow({
             </div>
             {i < items.length - 1 && (
               <ArrowRight
-                className={`h-4 w-4 flex-none ${accent ? "text-teal-400" : "text-gray-600"}`}
+                className={`h-4 w-4 flex-none ${accent ? "text-blue-400" : "text-gray-600"}`}
                 aria-hidden
               />
             )}

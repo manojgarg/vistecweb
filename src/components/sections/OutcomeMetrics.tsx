@@ -17,8 +17,7 @@ const cards = [
 
 export function OutcomeMetrics() {
   return (
-    <SectionWrapper variant="gradient" className="relative bg-gradient-to-br from-navy-950 via-navy-900 to-blue-600/20">
-      <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-mesh opacity-70" />
+    <SectionWrapper variant="white" className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50/40">
       <Container className="relative">
         <div className="max-w-3xl">
           <SectionEyebrow>Proven Outcomes</SectionEyebrow>
@@ -42,10 +41,10 @@ export function OutcomeMetrics() {
                 whileInView: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="relative overflow-hidden rounded-xl border border-white/10 bg-navy-900/70 p-7 backdrop-blur-xl"
+              className="relative overflow-hidden rounded-xl border border-gray-200 bg-white p-7 shadow-md"
             >
               <div className="relative">
-                <div className="text-4xl font-bold text-teal-400 md:text-5xl lg:text-metric">
+                <div className="text-4xl font-bold text-blue-400 md:text-5xl lg:text-metric">
                   <AnimatedCounter
                     value={c.value}
                     prefix={"prefix" in c ? c.prefix : ""}
@@ -53,18 +52,18 @@ export function OutcomeMetrics() {
                     decimals={Number.isInteger(c.value) ? 0 : 1}
                   />
                 </div>
-                <div className="mt-3 text-body-sm font-semibold text-white">{c.label}</div>
-                <div className="mt-1 text-caption text-gray-400">{c.sub}</div>
+                <div className="mt-3 text-body-sm font-semibold text-gray-900">{c.label}</div>
+                <div className="mt-1 text-caption text-gray-500">{c.sub}</div>
               </div>
               <div
                 aria-hidden
-                className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-teal-500/10 blur-2xl"
+                className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-500/10 blur-2xl"
               />
             </motion.li>
           ))}
         </motion.ul>
 
-        <p className="mt-8 max-w-3xl text-caption text-gray-400">
+        <p className="mt-8 max-w-3xl text-caption text-gray-500">
           Outcomes based on aggregate client data. Individual results may vary based on specialty,
           payer mix, and implementation scope.
         </p>

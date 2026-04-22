@@ -14,10 +14,10 @@ const accent: Record<string, { border: string; bg: string; text: string; dot: st
     dot: "bg-blue-400",
   },
   teal: {
-    border: "border-teal-400/30",
-    bg: "bg-teal-500/10",
-    text: "text-teal-300",
-    dot: "bg-teal-400",
+    border: "border-blue-500/30",
+    bg: "bg-blue-500/10",
+    text: "text-blue-300",
+    dot: "bg-blue-500",
   },
   amber: {
     border: "border-amber-400/30",
@@ -52,7 +52,7 @@ export function LayerStack({ defaultExpanded = false }: { defaultExpanded?: bool
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-xl border border-white/10 bg-navy-900/80 transition-colors hover:border-teal-400/30"
+            className="rounded-xl border border-white/10 bg-navy-900/80 transition-colors hover:border-blue-500/30"
           >
             <button
               type="button"

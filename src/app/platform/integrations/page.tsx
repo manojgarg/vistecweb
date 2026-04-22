@@ -49,11 +49,11 @@ export default function IntegrationsPage() {
 
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container className="max-w-3xl">
-          <SectionEyebrow>Implementation</SectionEyebrow>
-          <SectionHeading size="h1" tone="dark">
+          <SectionEyebrow tone="light">Implementation</SectionEyebrow>
+          <SectionHeading size="h1" tone="light">
             Live in 4–8 weeks.
           </SectionHeading>
-          <SectionSubtext tone="dark">
+          <SectionSubtext tone="light">
             We scope, connect, validate, and cut over in a phased rollout. No freeze, no rip-and-replace.
           </SectionSubtext>
         </Container>
@@ -64,7 +64,7 @@ export default function IntegrationsPage() {
                 key={t.label}
                 className="rounded-xl border border-white/10 bg-navy-900/70 p-5"
               >
-                <div className="text-caption font-mono uppercase tracking-widest text-teal-400">
+                <div className="text-caption font-mono uppercase tracking-widest text-blue-400">
                   {t.week}
                 </div>
                 <div className="mt-2 text-body font-semibold text-white">

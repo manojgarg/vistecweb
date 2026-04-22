@@ -23,12 +23,12 @@
   --gradient-cta: linear-gradient(135deg, #f55800 0%, #ff7a2e 100%);
   --gradient-card-glow: linear-gradient(
     135deg,
-    rgba(66, 195, 202, 0.12),
-    rgba(245, 88, 0, 0.12)
+    rgba(245, 88, 0, 0.10),
+    rgba(255, 122, 46, 0.10)
   );
-  --gradient-mesh: radial-gradient(at 27% 37%, rgba(66, 195, 202, 0.18) 0px, transparent 50%),
-    radial-gradient(at 97% 21%, rgba(245, 88, 0, 0.16) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, rgba(146, 212, 210, 0.1) 0px, transparent 50%);
+  --gradient-mesh: radial-gradient(at 27% 37%, rgba(245, 88, 0, 0.12) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, rgba(255, 122, 46, 0.10) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgba(255, 170, 110, 0.07) 0px, transparent 50%);
 }
 
 html {
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  @apply bg-navy-950 text-gray-100 antialiased;
+  @apply bg-white text-gray-900 antialiased;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,7 +49,7 @@ body {
 }
 
 *:focus-visible {
-  @apply outline-none ring-2 ring-teal-400 ring-offset-2 ring-offset-navy-950 rounded-sm;
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2 ring-offset-white rounded-sm;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -80,7 +80,7 @@ body {
     text-wrap: balance;
   }
   .dot-grid {
-    background-image: radial-gradient(rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(245, 88, 0, 0.07) 1px, transparent 1px);
     background-size: 24px 24px;
   }
   .noise-texture::after {

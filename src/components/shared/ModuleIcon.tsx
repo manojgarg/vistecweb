@@ -19,7 +19,7 @@ const map: Record<string, LucideIcon> = {
 };
 
 const colorClasses: Record<string, string> = {
-  teal: "from-teal-500/20 to-teal-400/5 text-teal-300 border-teal-500/30",
+  teal: "from-blue-500/20 to-blue-400/5 text-blue-300 border-blue-500/30",
   blue: "from-blue-500/20 to-blue-400/5 text-blue-400 border-blue-500/30",
   amber: "from-amber-500/20 to-amber-400/5 text-amber-400 border-amber-500/30",
 };
@@ -36,7 +36,7 @@ export function ModuleIcon({ icon, color, size = "md", className }: ModuleIconPr
   return (
     <div
       className={cn(
-        "relative grid place-items-center rounded-lg border bg-gradient-to-br transition-all duration-300 group-hover:scale-105 group-hover:shadow-glow-teal",
+        "relative grid place-items-center rounded-lg border bg-gradient-to-br transition-all duration-300 group-hover:scale-105 group-hover:shadow-glow-orange",
         colorClasses[color],
         size === "lg" ? "h-16 w-16" : "h-12 w-12",
         className,

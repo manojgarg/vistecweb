@@ -53,26 +53,26 @@ export default function PlatformPage() {
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container className="grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <SectionEyebrow>The Data Flywheel</SectionEyebrow>
-            <SectionHeading size="h1" tone="dark">
+            <SectionEyebrow tone="light">The Data Flywheel</SectionEyebrow>
+            <SectionHeading size="h1" tone="light">
               Every claim makes PARCS smarter.
             </SectionHeading>
-            <SectionSubtext tone="dark">
+            <SectionSubtext tone="light">
               Ingest → Analyze → Predict → Execute → Learn. The loop closes with every encounter.
               Denials teach PARCS to prevent the next one. Payments teach it to catch the next
               underpayment. Your data, compounding.
             </SectionSubtext>
             <ul className="mt-8 flex flex-col gap-3 text-body-sm text-gray-300">
               <li className="flex items-start gap-2">
-                <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full bg-teal-400" />
+                <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full bg-blue-500" />
                 Continuous, per-client fine-tuning — not a generic model.
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full bg-teal-400" />
+                <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full bg-blue-500" />
                 Outcome-labeled training data from every claim you process.
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full bg-teal-400" />
+                <span className="mt-[9px] h-1.5 w-1.5 flex-none rounded-full bg-blue-500" />
                 Drift monitoring and rollback — safe iteration in production.
               </li>
             </ul>
@@ -99,7 +99,7 @@ export default function PlatformPage() {
           <div className="mt-10 text-center">
             <Link
               href="/platform/architecture"
-              className="inline-flex items-center gap-2 text-body-sm font-semibold text-teal-300 hover:text-teal-200"
+              className="inline-flex items-center gap-2 text-body-sm font-semibold text-blue-300 hover:text-blue-300"
             >
               Full architecture deep-dive <ArrowRight className="h-4 w-4" />
             </Link>
@@ -109,11 +109,11 @@ export default function PlatformPage() {
 
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container className="max-w-3xl">
-          <SectionEyebrow>AI Engine</SectionEyebrow>
-          <SectionHeading size="h1" tone="dark">
+          <SectionEyebrow tone="light">AI Engine</SectionEyebrow>
+          <SectionHeading size="h1" tone="light">
             The AI behind PARCS.
           </SectionHeading>
-          <SectionSubtext tone="dark">
+          <SectionSubtext tone="light">
             Four capabilities, one engine. Every model is trained on real claims data and retrained
             continuously against real outcomes.
           </SectionSubtext>
@@ -149,11 +149,11 @@ export default function PlatformPage() {
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container>
           <div className="max-w-3xl">
-            <SectionEyebrow>Security &amp; Compliance</SectionEyebrow>
-            <SectionHeading size="h1" tone="dark">
+            <SectionEyebrow tone="light">Security &amp; Compliance</SectionEyebrow>
+            <SectionHeading size="h1" tone="light">
               Enterprise-grade from day one.
             </SectionHeading>
-            <SectionSubtext tone="dark">
+            <SectionSubtext tone="light">
               Continuous monitoring, audit logging, and role-based access controls across every
               layer of the stack.
             </SectionSubtext>

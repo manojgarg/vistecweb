@@ -11,7 +11,7 @@ export function SectionEyebrow({ tone = "dark", className, children, ...props }:
       className={cn(
         "inline-block text-caption font-semibold uppercase",
         "[letter-spacing:0.18em]",
-        tone === "dark" ? "text-teal-400" : "text-blue-600",
+        tone === "dark" ? "text-blue-600" : "text-blue-400",
         className,
       )}
       {...props}

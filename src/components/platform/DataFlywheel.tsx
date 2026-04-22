@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 
 const nodes = [
-  { label: "Ingest", angle: -90, color: "#60A5FA" },
-  { label: "Analyze", angle: -18, color: "#2DD4BF" },
-  { label: "Predict", angle: 54, color: "#5EEAD4" },
-  { label: "Execute", angle: 126, color: "#FBBF24" },
-  { label: "Learn", angle: 198, color: "#60A5FA" },
+  { label: "Ingest", angle: -90, color: "#FF7A2E" },
+  { label: "Analyze", angle: -18, color: "#FFAA6E" },
+  { label: "Predict", angle: 54, color: "#FF7A2E" },
+  { label: "Execute", angle: 126, color: "#F55800" },
+  { label: "Learn", angle: 198, color: "#FF7A2E" },
 ];
 
 const size = 460;
@@ -22,12 +22,12 @@ export function DataFlywheel() {
       <svg viewBox={`0 0 ${size} ${size}`} className="h-auto w-full" role="img" aria-label="Data flywheel">
         <defs>
           <linearGradient id="fw-stroke" x1="0" x2="1">
-            <stop offset="0%" stopColor="#2DD4BF" />
-            <stop offset="100%" stopColor="#60A5FA" />
+            <stop offset="0%" stopColor="#F55800" />
+            <stop offset="100%" stopColor="#FF7A2E" />
           </linearGradient>
           <radialGradient id="fw-center" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#2DD4BF" stopOpacity="0.35" />
-            <stop offset="100%" stopColor="#2DD4BF" stopOpacity="0" />
+            <stop offset="0%" stopColor="#F55800" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="#F55800" stopOpacity="0" />
           </radialGradient>
         </defs>
 
@@ -50,13 +50,13 @@ export function DataFlywheel() {
 
         <motion.circle
           r={5}
-          fill="#2DD4BF"
+          fill="#F55800"
           initial={{ offsetDistance: "0%" }}
           animate={{ offsetDistance: "100%" }}
           transition={{ duration: 12, ease: "linear", repeat: Infinity }}
           style={{
             offsetPath: `path("M ${cx} ${cy - r} A ${r} ${r} 0 1 1 ${cx - 0.01} ${cy - r}")`,
-            filter: "drop-shadow(0 0 8px rgba(45,212,191,0.9))",
+            filter: "drop-shadow(0 0 10px rgba(245,88,0,0.9))",
           }}
         />
 

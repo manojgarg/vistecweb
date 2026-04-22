@@ -23,7 +23,7 @@ export function Card({
           ? "bg-navy-800/80 border-navy-700 text-gray-100"
           : "bg-white border-gray-200 text-gray-900 shadow-sm",
         interactive &&
-          "hover:-translate-y-1 hover:shadow-lg hover:border-teal-500/40 cursor-pointer",
+          "hover:-translate-y-1 hover:shadow-lg hover:border-blue-500/40 cursor-pointer",
         glow && "bg-gradient-card-glow",
         className,
       )}

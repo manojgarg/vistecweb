@@ -20,7 +20,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#0A0F1E",
+  themeColor: "#09005E",
   width: "device-width",
   initialScale: 1,
 };
@@ -98,7 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen font-sans">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-teal-400 focus:px-4 focus:py-2 focus:text-navy-950"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-blue-500 focus:px-4 focus:py-2 focus:text-navy-950"
         >
           Skip to main content
         </a>

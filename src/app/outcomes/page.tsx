@@ -65,10 +65,10 @@ export default function OutcomesPage() {
                   </span>
                   <span className="text-caption text-gray-500">→</span>
                 </div>
-                <div className="mt-2 text-3xl font-bold text-teal-400 md:text-4xl">
+                <div className="mt-2 text-3xl font-bold text-blue-400 md:text-4xl">
                   <AnimatedCounter value={m.after} suffix={m.suffix} decimals={m.decimals} />
                 </div>
-                <div className="mt-2 text-caption text-teal-300">Within 90 days</div>
+                <div className="mt-2 text-caption text-blue-300">Within 90 days</div>
               </li>
             ))}
           </ul>
@@ -77,8 +77,8 @@ export default function OutcomesPage() {
 
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container className="max-w-3xl">
-          <SectionEyebrow>Testimonials</SectionEyebrow>
-          <SectionHeading size="h1" tone="dark">
+          <SectionEyebrow tone="light">Testimonials</SectionEyebrow>
+          <SectionHeading size="h1" tone="light">
             In our clients&apos; own words.
           </SectionHeading>
         </Container>
@@ -91,11 +91,11 @@ export default function OutcomesPage() {
               >
                 <Quote
                   aria-hidden
-                  className="absolute -top-3 left-6 h-8 w-8 text-teal-400/30"
+                  className="absolute -top-3 left-6 h-8 w-8 text-blue-400/30"
                 />
                 <p className="text-body-sm italic text-gray-100">&ldquo;{t.quote}&rdquo;</p>
                 <div className="mt-6 flex items-center gap-3">
-                  <div className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-teal-500/30 to-blue-500/30 text-body-sm font-semibold text-white">
+                  <div className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-blue-500/30 to-blue-500/30 text-body-sm font-semibold text-white">
                     {t.initial}
                   </div>
                   <div>
@@ -125,7 +125,7 @@ export default function OutcomesPage() {
                 key={`${c.industry}-${c.location}`}
                 className="rounded-xl border border-dashed border-white/15 bg-navy-900/40 p-6"
               >
-                <div className="inline-flex items-center gap-2 rounded-full border border-teal-400/30 bg-teal-500/10 px-3 py-1 text-caption text-teal-300">
+                <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-caption text-blue-300">
                   Coming soon
                 </div>
                 <h3 className="mt-4 text-h4 font-semibold text-white">{c.industry}</h3>
@@ -140,7 +140,7 @@ export default function OutcomesPage() {
                     <dd className="mt-1 text-body-sm text-gray-300">{c.solution}</dd>
                   </div>
                   <div>
-                    <dt className="text-caption uppercase tracking-widest text-teal-400">Results</dt>
+                    <dt className="text-caption uppercase tracking-widest text-blue-400">Results</dt>
                     <dd className="mt-1 text-body-sm font-medium text-white">{c.results}</dd>
                   </div>
                 </dl>

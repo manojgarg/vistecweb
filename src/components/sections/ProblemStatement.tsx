@@ -31,12 +31,12 @@ const problems = [
 const toneClass: Record<string, string> = {
   amber: "border-amber-400/30 bg-amber-500/5 text-amber-400",
   blue: "border-blue-400/30 bg-blue-500/5 text-blue-400",
-  teal: "border-teal-400/30 bg-teal-500/5 text-teal-300",
+  teal: "border-blue-500/30 bg-blue-500/5 text-blue-500",
 };
 
 export function ProblemStatement() {
   return (
-    <SectionWrapper variant="dark" className="bg-navy-900">
+    <SectionWrapper variant="dark">
       <Container className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
           <SectionEyebrow>The Problem</SectionEyebrow>
@@ -65,7 +65,7 @@ export function ProblemStatement() {
                   whileInView: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-                className="flex gap-5 rounded-xl border border-white/10 bg-navy-800/80 p-6"
+                className="flex gap-5 rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
               >
                 <div
                   className={`grid h-12 w-12 flex-none place-items-center rounded-lg border ${toneClass[p.tone]}`}
@@ -73,8 +73,8 @@ export function ProblemStatement() {
                   <Icon className="h-5 w-5" aria-hidden />
                 </div>
                 <div>
-                  <div className="text-h4 font-semibold text-white">{p.stat}</div>
-                  <p className="mt-1 text-body-sm text-gray-400">{p.detail}</p>
+                  <div className="text-h4 font-semibold text-gray-900">{p.stat}</div>
+                  <p className="mt-1 text-body-sm text-gray-600">{p.detail}</p>
                 </div>
               </motion.li>
             );

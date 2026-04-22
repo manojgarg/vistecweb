@@ -7,7 +7,7 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 const toneClasses = {
-  teal: "bg-teal-500/10 text-teal-300 border-teal-500/30",
+  teal: "bg-blue-500/10 text-blue-400 border-blue-500/30",
   blue: "bg-blue-500/10 text-blue-400 border-blue-500/30",
   amber: "bg-amber-500/10 text-amber-400 border-amber-500/30",
   gray: "bg-white/5 text-gray-300 border-white/10",

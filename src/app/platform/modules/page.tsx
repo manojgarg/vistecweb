@@ -39,18 +39,18 @@ export default function ModulesPage() {
               <li key={m.slug}>
                 <Link
                   href={`/platform/modules/${m.slug}`}
-                  className="group flex h-full flex-col rounded-xl border border-white/10 bg-navy-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-400/30 hover:shadow-glow-teal"
+                  className="group flex h-full flex-col rounded-xl border border-white/10 bg-navy-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-glow-orange"
                 >
                   <div className="flex items-start justify-between">
                     <ModuleIcon icon={m.icon} color={m.color} size="lg" />
-                    <ArrowUpRight className="h-4 w-4 text-gray-500 transition-colors group-hover:text-teal-300" aria-hidden />
+                    <ArrowUpRight className="h-4 w-4 text-gray-500 transition-colors group-hover:text-blue-300" aria-hidden />
                   </div>
                   <h2 className="mt-6 text-h4 font-semibold text-white">{m.name}</h2>
                   <p className="mt-2 text-body-sm text-gray-400">{m.tagline}</p>
                   <ul className="mt-6 flex flex-col gap-2 border-t border-white/5 pt-5 text-body-sm text-gray-300">
                     {m.capabilities.slice(0, 3).map((c) => (
                       <li key={c} className="flex items-start gap-2">
-                        <span className="mt-[9px] h-1 w-1 flex-none rounded-full bg-teal-400" />
+                        <span className="mt-[9px] h-1 w-1 flex-none rounded-full bg-blue-500" />
                         {c}
                       </li>
                     ))}

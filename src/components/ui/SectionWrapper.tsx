@@ -9,9 +9,9 @@ interface SectionWrapperProps extends HTMLAttributes<HTMLElement> {
 }
 
 const variantClasses: Record<SectionVariant, string> = {
-  dark: "bg-navy-950 text-gray-100",
-  light: "bg-gray-50 text-gray-900",
-  gradient: "bg-navy-950 text-gray-100",
+  dark: "bg-gray-50 text-gray-900",
+  light: "bg-white text-gray-900",
+  gradient: "bg-gray-50 text-gray-900",
   white: "bg-white text-gray-900",
 };
 

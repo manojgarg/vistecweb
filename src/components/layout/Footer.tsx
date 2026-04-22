@@ -36,7 +36,7 @@ const columns = [
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-white/10 bg-navy-950 text-gray-300">
+    <footer className="relative border-t border-gray-800 bg-gray-900 text-gray-300">
       <Container className="py-16 md:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr_1.4fr]">
           <div>
@@ -50,14 +50,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="grid h-9 w-9 place-items-center rounded-md border border-white/10 text-gray-400 transition-colors hover:border-teal-400/40 hover:text-teal-400"
+                className="grid h-9 w-9 place-items-center rounded-md border border-gray-700 text-gray-400 transition-colors hover:border-blue-500/60 hover:text-blue-400"
               >
                 <Linkedin className="h-4 w-4" />
               </Link>
               <a
                 href={`mailto:${SITE.email}`}
                 aria-label="Email us"
-                className="grid h-9 w-9 place-items-center rounded-md border border-white/10 text-gray-400 transition-colors hover:border-teal-400/40 hover:text-teal-400"
+                className="grid h-9 w-9 place-items-center rounded-md border border-gray-700 text-gray-400 transition-colors hover:border-blue-500/60 hover:text-blue-400"
               >
                 <Mail className="h-4 w-4" />
               </a>
@@ -67,7 +67,7 @@ export function Footer() {
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
             {columns.map((col) => (
               <div key={col.title}>
-                <h3 className="text-caption font-semibold uppercase tracking-widest text-gray-400">
+                <h3 className="text-caption font-semibold uppercase tracking-widest text-gray-500">
                   {col.title}
                 </h3>
                 <ul className="mt-4 flex flex-col gap-3">
@@ -92,13 +92,13 @@ export function Footer() {
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
               <li className="flex items-center gap-2 text-body-sm text-gray-300">
-                <Mail className="h-4 w-4 text-teal-400" />
+                <Mail className="h-4 w-4 text-blue-400" />
                 <a href={`mailto:${SITE.email}`} className="hover:text-white">
                   {SITE.email}
                 </a>
               </li>
               <li className="flex items-center gap-2 text-body-sm text-gray-300">
-                <Phone className="h-4 w-4 text-teal-400" />
+                <Phone className="h-4 w-4 text-blue-400" />
                 <a href={`tel:${SITE.phone.replace(/\D/g, "")}`} className="hover:text-white">
                   {SITE.phone}
                 </a>
@@ -107,18 +107,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-8 md:flex-row md:items-center">
+        <div className="mt-14 flex flex-col items-start justify-between gap-6 border-t border-gray-700 pt-8 md:flex-row md:items-center">
           <div className="flex flex-wrap items-center gap-3 text-caption text-gray-500">
             <span className="inline-flex items-center gap-1.5">
-              <ShieldCheck className="h-3.5 w-3.5 text-teal-400" /> HIPAA Compliant
+              <ShieldCheck className="h-3.5 w-3.5 text-blue-400" /> HIPAA Compliant
             </span>
-            <span className="text-gray-700">·</span>
+            <span className="text-gray-600">·</span>
             <span className="inline-flex items-center gap-1.5">
-              <Lock className="h-3.5 w-3.5 text-teal-400" /> SOC 2
+              <Lock className="h-3.5 w-3.5 text-blue-400" /> SOC 2
             </span>
-            <span className="text-gray-700">·</span>
+            <span className="text-gray-600">·</span>
             <span className="inline-flex items-center gap-1.5">
-              <Database className="h-3.5 w-3.5 text-teal-400" /> EHR Integrated
+              <Database className="h-3.5 w-3.5 text-blue-400" /> EHR Integrated
             </span>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-caption text-gray-500">

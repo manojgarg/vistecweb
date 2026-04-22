@@ -53,9 +53,9 @@ export function AIEngineDetail() {
               whileInView: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-xl border border-white/10 bg-navy-900/60 p-7 transition-colors hover:border-teal-400/30"
+            className="rounded-xl border border-white/10 bg-navy-900/60 p-7 transition-colors hover:border-blue-500/30"
           >
-            <div className="grid h-12 w-12 place-items-center rounded-lg border border-teal-400/30 bg-teal-500/10 text-teal-300">
+            <div className="grid h-12 w-12 place-items-center rounded-lg border border-blue-500/30 bg-blue-500/10 text-blue-300">
               <Icon className="h-5 w-5" aria-hidden />
             </div>
             <h3 className="mt-5 text-h4 font-semibold text-white">{f.title}</h3>
@@ -63,7 +63,7 @@ export function AIEngineDetail() {
             <ul className="mt-4 flex flex-col gap-2">
               {f.bullets.map((b) => (
                 <li key={b} className="flex items-start gap-2 text-body-sm text-gray-300">
-                  <span className="mt-[9px] h-1 w-1 flex-none rounded-full bg-teal-400" />
+                  <span className="mt-[9px] h-1 w-1 flex-none rounded-full bg-blue-500" />
                   {b}
                 </li>
               ))}

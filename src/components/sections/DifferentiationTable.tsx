@@ -50,7 +50,7 @@ const rows: { feature: string; traditional: [Mark, string]; aiOnly: [Mark, strin
 function MarkIcon({ mark }: { mark: Mark }) {
   if (mark === "check")
     return (
-      <span className="inline-grid h-6 w-6 place-items-center rounded-full bg-teal-500/10 text-teal-500">
+      <span className="inline-grid h-6 w-6 place-items-center rounded-full bg-blue-500/10 text-blue-500">
         <Check className="h-3.5 w-3.5" strokeWidth={3} />
       </span>
     );

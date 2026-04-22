@@ -21,4 +21,4 @@ export interface Metric {
 }
 
 export type SectionVariant = "dark" | "light" | "gradient" | "white";
-export type ButtonVariant = "primary" | "secondary" | "ghost" | "cta";
+export type ButtonVariant = "primary" | "secondary" | "ghost" | "cta" | "outline";

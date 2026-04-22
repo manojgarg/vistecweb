@@ -12,16 +12,18 @@ interface BaseProps {
 }
 
 const baseStyles =
-  "inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-950";
+  "inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white";
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
     "bg-blue-600 text-white shadow-md hover:bg-blue-500 hover:shadow-glow-blue hover:-translate-y-0.5",
   secondary:
-    "bg-transparent text-white border border-white/20 hover:bg-white/5 hover:border-white/40",
+    "bg-transparent text-gray-700 border border-gray-300 hover:bg-gray-50 hover:border-gray-400 hover:text-gray-900",
   ghost:
     "bg-transparent text-blue-600 hover:text-blue-500 hover:underline underline-offset-4 px-2 py-1",
   cta: "bg-blue-600 text-white shadow-md hover:shadow-glow-blue hover:-translate-y-0.5",
+  outline:
+    "bg-transparent text-white border border-white/30 hover:bg-white/10 hover:border-white/50",
 };
 
 const sizeStyles = {

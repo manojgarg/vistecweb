@@ -48,11 +48,11 @@ export default function ArchitecturePage() {
 
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container className="max-w-3xl">
-          <SectionEyebrow>Claim Flow</SectionEyebrow>
-          <SectionHeading size="h1" tone="dark">
+          <SectionEyebrow tone="light">Claim Flow</SectionEyebrow>
+          <SectionHeading size="h1" tone="light">
             How a claim moves through PARCS.
           </SectionHeading>
-          <SectionSubtext tone="dark">
+          <SectionSubtext tone="light">
             From the moment it&apos;s created, every claim is scored, routed, and learned from.
             The result: higher first-pass rates and continuous improvement.
           </SectionSubtext>
@@ -64,7 +64,7 @@ export default function ArchitecturePage() {
                 key={f.stage}
                 className="relative flex items-start gap-5 rounded-xl border border-white/10 bg-navy-900/80 p-5"
               >
-                <div className="grid h-10 w-10 flex-none place-items-center rounded-full border border-teal-400/30 bg-teal-500/10 font-mono text-body-sm font-semibold text-teal-300">
+                <div className="grid h-10 w-10 flex-none place-items-center rounded-full border border-blue-500/30 bg-blue-500/10 font-mono text-body-sm font-semibold text-blue-300">
                   {i + 1}
                 </div>
                 <div>
@@ -95,8 +95,8 @@ export default function ArchitecturePage() {
 
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container className="max-w-3xl">
-          <SectionEyebrow>Security</SectionEyebrow>
-          <SectionHeading size="h1" tone="dark">
+          <SectionEyebrow tone="light">Security</SectionEyebrow>
+          <SectionHeading size="h1" tone="light">
             HIPAA, SOC 2, encrypted everywhere.
           </SectionHeading>
         </Container>

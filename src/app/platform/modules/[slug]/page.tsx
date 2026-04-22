@@ -38,7 +38,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
           <div>
             <Link
               href="/platform/modules"
-              className="inline-flex items-center gap-2 text-caption uppercase tracking-widest text-teal-300 hover:text-teal-200"
+              className="inline-flex items-center gap-2 text-caption uppercase tracking-widest text-blue-300 hover:text-blue-300"
             >
               ← All modules
             </Link>
@@ -74,7 +74,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             <p className="mt-6 text-body text-gray-300">{mod.description}</p>
           </div>
           <div>
-            <h3 className="text-caption font-semibold uppercase tracking-widest text-teal-400">
+            <h3 className="text-caption font-semibold uppercase tracking-widest text-blue-400">
               Capabilities
             </h3>
             <ul className="mt-4 flex flex-col gap-3">
@@ -83,7 +83,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                   key={c}
                   className="flex items-start gap-3 rounded-lg border border-white/10 bg-navy-900/60 p-4"
                 >
-                  <span className="mt-0.5 grid h-5 w-5 flex-none place-items-center rounded-full bg-teal-500/15 text-teal-300">
+                  <span className="mt-0.5 grid h-5 w-5 flex-none place-items-center rounded-full bg-blue-500/15 text-blue-300">
                     <Check className="h-3 w-3" strokeWidth={3} />
                   </span>
                   <span className="text-body-sm text-gray-200">{c}</span>
@@ -96,8 +96,8 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
 
       <SectionWrapper variant="dark" className="bg-navy-900">
         <Container className="max-w-4xl">
-          <SectionEyebrow>How it works</SectionEyebrow>
-          <SectionHeading size="h2" tone="dark">
+          <SectionEyebrow tone="light">How it works</SectionEyebrow>
+          <SectionHeading size="h2" tone="light">
             Wired into your stack from day one.
           </SectionHeading>
           <ol className="mt-10 flex flex-col gap-4">
@@ -106,7 +106,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                 key={step}
                 className="flex gap-5 rounded-xl border border-white/10 bg-navy-900/70 p-5"
               >
-                <div className="grid h-11 w-11 flex-none place-items-center rounded-full border border-teal-400/30 bg-teal-500/10 font-mono text-body-sm font-semibold text-teal-300">
+                <div className="grid h-11 w-11 flex-none place-items-center rounded-full border border-blue-500/30 bg-blue-500/10 font-mono text-body-sm font-semibold text-blue-300">
                   {i + 1}
                 </div>
                 <p className="text-body-sm text-gray-200">{step}</p>
@@ -127,7 +127,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             </div>
             <Link
               href="/platform/modules"
-              className="inline-flex items-center gap-2 text-body-sm font-semibold text-teal-300 hover:text-teal-200"
+              className="inline-flex items-center gap-2 text-body-sm font-semibold text-blue-300 hover:text-blue-300"
             >
               See all modules <ArrowRight className="h-4 w-4" />
             </Link>
@@ -137,11 +137,11 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
               <li key={m.slug}>
                 <Link
                   href={`/platform/modules/${m.slug}`}
-                  className="group flex h-full flex-col rounded-xl border border-white/10 bg-navy-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-400/30"
+                  className="group flex h-full flex-col rounded-xl border border-white/10 bg-navy-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/30"
                 >
                   <div className="flex items-start justify-between">
                     <ModuleIcon icon={m.icon} color={m.color} />
-                    <ArrowUpRight className="h-4 w-4 text-gray-500 transition-colors group-hover:text-teal-300" aria-hidden />
+                    <ArrowUpRight className="h-4 w-4 text-gray-500 transition-colors group-hover:text-blue-300" aria-hidden />
                   </div>
                   <h3 className="mt-5 text-h4 font-semibold text-white">{m.name}</h3>
                   <p className="mt-2 text-body-sm text-gray-400">{m.tagline}</p>

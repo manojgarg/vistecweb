@@ -146,9 +146,9 @@ const config: Config = {
           "linear-gradient(135deg, #050622 0%, #09005E 55%, #1F1F77 100%)",
         "gradient-cta": "linear-gradient(135deg, #F55800 0%, #FF7A2E 100%)",
         "gradient-card-glow":
-          "linear-gradient(135deg, rgba(66,195,202,0.12), rgba(245,88,0,0.12))",
+          "linear-gradient(135deg, rgba(245,88,0,0.10), rgba(255,122,46,0.10))",
         "gradient-mesh":
-          "radial-gradient(at 27% 37%, rgba(66,195,202,0.18) 0px, transparent 50%), radial-gradient(at 97% 21%, rgba(245,88,0,0.16) 0px, transparent 50%), radial-gradient(at 52% 99%, rgba(146,212,210,0.10) 0px, transparent 50%)",
+          "radial-gradient(at 27% 37%, rgba(245,88,0,0.12) 0px, transparent 50%), radial-gradient(at 97% 21%, rgba(255,122,46,0.10) 0px, transparent 50%), radial-gradient(at 52% 99%, rgba(255,170,110,0.07) 0px, transparent 50%)",
       },
     },
   },

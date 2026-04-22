@@ -27,7 +27,7 @@ export function SectionHeading({
       className={cn(
         "font-bold leading-tight tracking-tight text-balance mt-4",
         sizeClasses[size],
-        tone === "dark" ? "text-white" : "text-gray-900",
+        tone === "dark" ? "text-gray-900" : "text-white",
         className,
       )}
       {...props}
@@ -47,7 +47,7 @@ export function SectionSubtext({
     <p
       className={cn(
         "mt-5 max-w-2xl text-body",
-        tone === "dark" ? "text-gray-400" : "text-gray-600",
+        tone === "dark" ? "text-gray-600" : "text-gray-300",
         className,
       )}
       {...props}

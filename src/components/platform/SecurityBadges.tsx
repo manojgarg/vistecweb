@@ -42,7 +42,7 @@ export function SecurityBadges() {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="rounded-xl border border-white/10 bg-navy-900/60 p-7 text-center"
           >
-            <div className="mx-auto grid h-14 w-14 place-items-center rounded-full border border-teal-400/30 bg-teal-500/10 text-teal-300">
+            <div className="mx-auto grid h-14 w-14 place-items-center rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300">
               <Icon className="h-6 w-6" aria-hidden />
             </div>
             <h3 className="mt-5 text-h4 font-semibold text-white">{s.title}</h3>

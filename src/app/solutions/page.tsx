@@ -36,7 +36,7 @@ export default function SolutionsPage() {
               <a
                 key={s.slug}
                 href={`#${s.slug}`}
-                className="rounded-full border border-white/10 bg-navy-800/60 px-4 py-2 text-body-sm text-gray-200 transition-colors hover:border-teal-400/30 hover:text-white"
+                className="rounded-full border border-white/10 bg-navy-800/60 px-4 py-2 text-body-sm text-gray-200 transition-colors hover:border-blue-500/30 hover:text-white"
               >
                 {s.label}
               </a>
@@ -71,13 +71,13 @@ export default function SolutionsPage() {
                   <div
                     className={`mt-8 rounded-xl border p-5 ${
                       dark
-                        ? "border-teal-400/30 bg-teal-500/5"
+                        ? "border-blue-500/30 bg-blue-500/5"
                         : "border-blue-200 bg-blue-50"
                     }`}
                   >
                     <div
                       className={`text-caption font-semibold uppercase tracking-widest ${
-                        dark ? "text-teal-300" : "text-blue-600"
+                        dark ? "text-blue-300" : "text-blue-600"
                       }`}
                     >
                       Outcome
@@ -105,7 +105,7 @@ export default function SolutionsPage() {
                 <div>
                   <h3
                     className={`text-caption font-semibold uppercase tracking-widest ${
-                      dark ? "text-teal-400" : "text-blue-600"
+                      dark ? "text-blue-400" : "text-blue-600"
                     }`}
                   >
                     Pain Points
@@ -131,7 +131,7 @@ export default function SolutionsPage() {
                   </ul>
                   <h3
                     className={`mt-8 text-caption font-semibold uppercase tracking-widest ${
-                      dark ? "text-teal-400" : "text-blue-600"
+                      dark ? "text-blue-400" : "text-blue-600"
                     }`}
                   >
                     Highlighted Modules
@@ -146,8 +146,8 @@ export default function SolutionsPage() {
                             href={`/platform/modules/${m.slug}`}
                             className={`group flex items-center gap-4 rounded-lg border p-4 transition-colors ${
                               dark
-                                ? "border-white/10 bg-navy-900/70 hover:border-teal-400/30"
-                                : "border-gray-200 bg-white hover:border-teal-500/40"
+                                ? "border-white/10 bg-navy-900/70 hover:border-blue-500/30"
+                                : "border-gray-200 bg-white hover:border-blue-500/40"
                             }`}
                           >
                             <ModuleIcon icon={m.icon} color={m.color} />
@@ -169,7 +169,7 @@ export default function SolutionsPage() {
                             </div>
                             <Check
                               className={`h-4 w-4 flex-none ${
-                                dark ? "text-teal-400" : "text-teal-500"
+                                dark ? "text-blue-400" : "text-blue-500"
                               }`}
                               aria-hidden
                             />

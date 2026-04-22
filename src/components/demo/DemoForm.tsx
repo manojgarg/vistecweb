@@ -84,7 +84,7 @@ export function DemoForm() {
               initial={{ scale: 0.6, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ type: "spring", stiffness: 220, damping: 18 }}
-              className="grid h-16 w-16 place-items-center rounded-full bg-teal-500/10 text-teal-500"
+              className="grid h-16 w-16 place-items-center rounded-full bg-blue-500/10 text-blue-500"
             >
               <CheckCircle2 className="h-10 w-10" strokeWidth={1.75} />
             </motion.div>

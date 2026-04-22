@@ -43,11 +43,11 @@ export function ModuleGrid() {
             >
               <Link
                 href={`/platform/modules/${m.slug}`}
-                className="group relative flex h-full flex-col rounded-xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/40 hover:shadow-lg"
+                className="group relative flex h-full flex-col rounded-xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:shadow-lg"
               >
                 <div className="flex items-start justify-between">
                   <ModuleIcon icon={m.icon} color={m.color} />
-                  <ArrowUpRight className="h-4 w-4 text-gray-400 transition-colors group-hover:text-teal-500" aria-hidden />
+                  <ArrowUpRight className="h-4 w-4 text-gray-400 transition-colors group-hover:text-blue-500" aria-hidden />
                 </div>
                 <h3 className="mt-6 text-h4 font-semibold text-gray-900">{m.name}</h3>
                 <p className="mt-2 text-body-sm text-gray-600">{m.tagline}</p>

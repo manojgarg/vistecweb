@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 function MarkIcon({ mark }: { mark: "check" | "warn" | "x" }) {
   if (mark === "check")
     return (
-      <span className="inline-grid h-5 w-5 flex-none place-items-center rounded-full bg-teal-500/20 text-teal-300">
+      <span className="inline-grid h-5 w-5 flex-none place-items-center rounded-full bg-blue-500/20 text-blue-300">
         <Check className="h-3 w-3" strokeWidth={3} />
       </span>
     );
@@ -67,7 +67,7 @@ export default function ComparePage() {
                       className={cn(
                         "px-5 py-5 text-caption font-semibold uppercase tracking-widest",
                         "highlight" in c && c.highlight
-                          ? "bg-blue-600/20 text-teal-300"
+                          ? "bg-blue-600 text-white"
                           : "text-gray-400",
                       )}
                     >
@@ -93,7 +93,7 @@ export default function ComparePage() {
                           key={c.key}
                           className={cn(
                             "px-5 py-5 align-top text-body-sm text-gray-300",
-                            highlight && "bg-blue-600/10 text-white",
+                            highlight && "bg-blue-600/15 text-white",
                           )}
                         >
                           <div className="flex items-start gap-3">
@@ -128,13 +128,13 @@ export default function ComparePage() {
                         key={c.key}
                         className={cn(
                           "flex items-start gap-3 px-5 py-4",
-                          highlight && "bg-blue-600/10",
+                          highlight && "bg-blue-600/15",
                         )}
                       >
                         <dt
                           className={cn(
                             "w-36 flex-none text-caption uppercase tracking-widest",
-                            highlight ? "text-teal-300" : "text-gray-400",
+                            highlight ? "text-blue-300" : "text-gray-400",
                           )}
                         >
                           {c.name}
