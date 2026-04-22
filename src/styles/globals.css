@@ -3,12 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --gradient-hero: linear-gradient(135deg, #0a0f1e 0%, #1e293b 50%, #0f172a 100%);
-  --gradient-cta: linear-gradient(135deg, #0b5ed7, #2563eb);
-  --gradient-card-glow: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(11, 94, 215, 0.1));
-  --gradient-mesh: radial-gradient(at 27% 37%, rgba(20, 184, 166, 0.15) 0px, transparent 50%),
-    radial-gradient(at 97% 21%, rgba(11, 94, 215, 0.12) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, rgba(245, 158, 11, 0.08) 0px, transparent 50%);
+  /* Vistec Partners brand tokens */
+  --brand-orange: #f55800;
+  --brand-orange-light: #ff7a2e;
+  --brand-orange-soft: #ffaa6e;
+  --brand-orange-peach: #ffbf8b;
+  --brand-orange-pale: #ffd4b0;
+  --brand-orange-tint: #fef3e7;
+  --brand-orange-ghost: #fff8f2;
+  --brand-navy: #031d76;
+  --brand-navy-deep: #09005e;
+  --brand-navy-light: #1f1f77;
+  --brand-teal: #00697f;
+  --brand-teal-mid: #42c3ca;
+  --brand-teal-light: #92d4d2;
+  --brand-cream: #fef3e7;
+
+  --gradient-hero: linear-gradient(135deg, #050622 0%, #09005e 55%, #1f1f77 100%);
+  --gradient-cta: linear-gradient(135deg, #f55800 0%, #ff7a2e 100%);
+  --gradient-card-glow: linear-gradient(
+    135deg,
+    rgba(66, 195, 202, 0.12),
+    rgba(245, 88, 0, 0.12)
+  );
+  --gradient-mesh: radial-gradient(at 27% 37%, rgba(66, 195, 202, 0.18) 0px, transparent 50%),
+    radial-gradient(at 97% 21%, rgba(245, 88, 0, 0.16) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgba(146, 212, 210, 0.1) 0px, transparent 50%);
 }
 
 html {
@@ -24,8 +44,8 @@ body {
 }
 
 ::selection {
-  background-color: rgba(20, 184, 166, 0.3);
-  color: #f8fafc;
+  background-color: rgba(245, 88, 0, 0.35);
+  color: #ffffff;
 }
 
 *:focus-visible {

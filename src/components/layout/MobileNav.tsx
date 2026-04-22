@@ -31,18 +31,18 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-y-0 right-0 z-50 flex h-full w-[min(420px,100%)] flex-col bg-navy-950 shadow-2xl"
+            className="fixed inset-y-0 right-0 z-50 flex h-full w-[min(420px,100%)] flex-col bg-white shadow-2xl"
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation"
           >
-            <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
+            <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4">
               <Logo />
               <button
                 type="button"
                 onClick={onClose}
                 aria-label="Close menu"
-                className="rounded-md p-2 text-gray-400 transition-colors hover:bg-white/5 hover:text-white"
+                className="rounded-md p-2 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900"
               >
                 <X className="h-5 w-5" />
               </button>
@@ -54,7 +54,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                     <Link
                       href={item.href}
                       onClick={onClose}
-                      className="block rounded-md px-3 py-3 text-h4 font-semibold text-white transition-colors hover:bg-white/5"
+                      className="block rounded-md px-3 py-3 text-h4 font-semibold text-gray-900 transition-colors hover:bg-gray-100"
                     >
                       {item.label}
                     </Link>
@@ -65,7 +65,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                             <Link
                               href={c.href}
                               onClick={onClose}
-                              className="block rounded-md px-3 py-2 text-body-sm text-gray-400 transition-colors hover:bg-white/5 hover:text-white"
+                              className="block rounded-md px-3 py-2 text-body-sm text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900"
                             >
                               {c.label}
                             </Link>
@@ -77,11 +77,11 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                 ))}
               </ul>
             </nav>
-            <div className="border-t border-white/10 p-6">
+            <div className="border-t border-gray-200 p-6">
               <ButtonLink href="/demo" variant="primary" size="md" className="w-full">
                 Request Demo →
               </ButtonLink>
-              <p className="mt-3 text-center text-caption text-gray-500">
+              <p className="mt-3 text-center text-caption text-gray-400">
                 30-minute walkthrough · No commitment
               </p>
             </div>

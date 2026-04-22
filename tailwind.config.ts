@@ -16,22 +16,42 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // Vistec Partners brand navy (maps from site CSS #031D76 / #09005E / #1F1F77)
         navy: {
-          950: "#0A0F1E",
-          900: "#0F172A",
-          800: "#1E293B",
-          700: "#334155",
+          950: "#050622",
+          900: "#09005E",
+          800: "#1F1F77",
+          700: "#2A2A8A",
         },
+        // Semantic "primary" = Vistec brand orange #F55800 (logo color)
+        // Kept as `blue` token names to avoid rewriting every component class
         blue: {
-          600: "#0B5ED7",
-          500: "#2563EB",
-          400: "#60A5FA",
-          100: "#DBEAFE",
+          50: "#FFF8F2",
+          100: "#FEF3E7",
+          200: "#FFD4B0",
+          300: "#FFBF8B",
+          400: "#FFAA6E",
+          500: "#FF7A2E",
+          600: "#F55800",
         },
+        // Vistec supporting teal family (#00697F, #42C3CA, #92D4D2)
         teal: {
-          500: "#14B8A6",
-          400: "#2DD4BF",
-          300: "#5EEAD4",
+          500: "#00697F",
+          400: "#42C3CA",
+          300: "#92D4D2",
+        },
+        // Brand-native aliases (use these in new code for clarity)
+        brand: {
+          orange: "#F55800",
+          "orange-light": "#FF7A2E",
+          "orange-soft": "#FFAA6E",
+          "orange-tint": "#FEF3E7",
+          navy: "#031D76",
+          "navy-deep": "#09005E",
+          "navy-light": "#1F1F77",
+          teal: "#00697F",
+          "teal-mid": "#42C3CA",
+          "teal-light": "#92D4D2",
         },
         amber: {
           500: "#F59E0B",
@@ -84,8 +104,10 @@ const config: Config = {
         md: "0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1)",
         lg: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)",
         xl: "0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1)",
-        "glow-blue": "0 0 40px rgba(11,94,215,0.3)",
-        "glow-teal": "0 0 40px rgba(20,184,166,0.3)",
+        // brand orange glow (was blue)
+        "glow-blue": "0 0 40px rgba(245,88,0,0.35)",
+        "glow-orange": "0 0 40px rgba(245,88,0,0.35)",
+        "glow-teal": "0 0 40px rgba(66,195,202,0.3)",
       },
       maxWidth: {
         "7xl": "1280px",
@@ -108,8 +130,8 @@ const config: Config = {
           "100%": { transform: "translateX(0)" },
         },
         "glow-pulse": {
-          "0%, 100%": { filter: "drop-shadow(0 0 8px rgba(45, 212, 191, 0.4))" },
-          "50%": { filter: "drop-shadow(0 0 16px rgba(45, 212, 191, 0.8))" },
+          "0%, 100%": { filter: "drop-shadow(0 0 8px rgba(245, 88, 0, 0.45))" },
+          "50%": { filter: "drop-shadow(0 0 16px rgba(245, 88, 0, 0.8))" },
         },
       },
       animation: {
@@ -120,12 +142,13 @@ const config: Config = {
         "glow-pulse": "glow-pulse 3s ease-in-out infinite",
       },
       backgroundImage: {
-        "gradient-hero": "linear-gradient(135deg, #0A0F1E 0%, #1E293B 50%, #0F172A 100%)",
-        "gradient-cta": "linear-gradient(135deg, #0B5ED7, #2563EB)",
+        "gradient-hero":
+          "linear-gradient(135deg, #050622 0%, #09005E 55%, #1F1F77 100%)",
+        "gradient-cta": "linear-gradient(135deg, #F55800 0%, #FF7A2E 100%)",
         "gradient-card-glow":
-          "linear-gradient(135deg, rgba(20,184,166,0.1), rgba(11,94,215,0.1))",
+          "linear-gradient(135deg, rgba(66,195,202,0.12), rgba(245,88,0,0.12))",
         "gradient-mesh":
-          "radial-gradient(at 27% 37%, rgba(20,184,166,0.15) 0px, transparent 50%), radial-gradient(at 97% 21%, rgba(11,94,215,0.12) 0px, transparent 50%), radial-gradient(at 52% 99%, rgba(245,158,11,0.08) 0px, transparent 50%)",
+          "radial-gradient(at 27% 37%, rgba(66,195,202,0.18) 0px, transparent 50%), radial-gradient(at 97% 21%, rgba(245,88,0,0.16) 0px, transparent 50%), radial-gradient(at 52% 99%, rgba(146,212,210,0.10) 0px, transparent 50%)",
       },
     },
   },

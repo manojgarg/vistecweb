@@ -34,8 +34,8 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-40 transition-all duration-300",
         scrolled
-          ? "border-b border-white/10 bg-navy-950/80 backdrop-blur-xl"
-          : "border-b border-transparent bg-navy-950/60 backdrop-blur-md",
+          ? "border-b border-gray-200 bg-white shadow-sm"
+          : "border-b border-gray-100 bg-white/95 backdrop-blur-md",
       )}
     >
       <div className="mx-auto flex h-18 w-full max-w-7xl items-center justify-between gap-4 px-6 md:px-8" style={{ height: 72 }}>
@@ -59,7 +59,7 @@ export function Navbar() {
                   href={item.href}
                   className={cn(
                     "group inline-flex items-center gap-1 rounded-md px-4 py-2 text-body-sm font-medium transition-colors",
-                    active ? "text-white" : "text-gray-300 hover:text-white",
+                    active ? "text-gray-900 font-semibold" : "text-gray-600 hover:text-gray-900",
                   )}
                   aria-haspopup={hasChildren ? "true" : undefined}
                   aria-expanded={hasChildren ? menuOpen === item.label : undefined}
@@ -100,7 +100,7 @@ export function Navbar() {
             type="button"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
-            className="grid h-10 w-10 place-items-center rounded-md text-gray-300 transition-colors hover:bg-white/5 hover:text-white lg:hidden"
+            className="grid h-10 w-10 place-items-center rounded-md text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900 lg:hidden"
           >
             <Menu className="h-5 w-5" />
           </button>
